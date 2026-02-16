@@ -8,11 +8,23 @@
 
     <header>
         <h1>Hog Hunting: The Feral Truth</h1>
-    <img src="better banner image hogs.jpg" alt="Picture of hogs running" style="width: 300px; height: auto;">
     </header>
-
+    <div class="banner">
+        <img src="better banner image hogs.jpg" alt="Picture of hogs running">
+    </div>
     <style>
-      table, th  {
+     .banner {
+            width: 100%;
+            height: 250px;  /* control banner height here */
+            overflow: hidden;
+        }
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;   /* prevents distortion */
+            display: block;
+        }
+     table, th  {
         width: 100%;
         table-layout: fixed;
         border: 3px solid black;
