@@ -62,7 +62,7 @@ table {
 }
 
 th {
-  border: 3px #3e2c1c; /* dark hog brown */;
+  border: 3px solid rgb(49, 29, 5); /* dark hog brown */;
   background-color: #556b2f; /* forest green */;
 }
 
@@ -71,7 +71,7 @@ th a {
   padding: 12px 0;
   text-align: center;
   color:#556b2f; /* forest green */
-  border: 3px #3e2c1c; /* dark hog brown */;
+  border: 3px solid rgb(49, 29, 5); /* dark hog brown */;
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
@@ -134,7 +134,7 @@ ul {
    Footer
    =============================== */
 footer {
-  background-color: #3e2c1c; /* dark hog brown */
+  background-color: 3px solid rgb(49, 29, 5); /* dark hog brown */;
   color: #f0d6a2;           /* light tan */
   text-align: center;
   padding: 15px;
