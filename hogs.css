@@ -133,7 +133,7 @@ ul {
    Footer
    =============================== */
 footer {
-  background-color: 3px solid rgb(49, 29, 5); /* dark hog brown */;
+  background-color: solid rgb(49, 29, 5); /* dark hog brown */;
   color: #f0d6a2;           /* light tan */
   text-align: center;
   padding: 15px;
