@@ -18,10 +18,10 @@ body {
    Header
    =============================== */
 header {
-  background-color: #556b2f; /* muted forest green from grass edges */
-  color: #d9741d; /* warm golden-orange from highlights on hogs */
+  background-color: #d9741d; /* muted version of hunter's orange */ 
+  color: #556b2f; /* muted forest green from grass edges */
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-size: 2em;
   letter-spacing: 1px;
 }
