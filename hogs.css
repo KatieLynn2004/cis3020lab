@@ -75,7 +75,7 @@ th a {
 }
 
 th a:hover {
-  background-color: #d9741d; /* golden-orange */
+  background-color: #fff;
   color: #556b2f; /* forest green */;
 }
 
@@ -84,7 +84,7 @@ th a:active {
 }
 
 th a:visited {
-  color:  #fff;
+  color: #d9741d; /* golden-orange */;
 }
 
 /* Responsive Navigation */
