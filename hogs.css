@@ -56,7 +56,6 @@ header {
 table {
   width: 100%;
   table-layout: fixed;
-  border: 3px #3e2c1c; /* dark hog brown */;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
@@ -71,6 +70,7 @@ th a {
   padding: 12px 0;
   text-align: center;
   color:#556b2f; /* forest green */
+  border: 3px #3e2c1c; /* dark hog brown */;
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
