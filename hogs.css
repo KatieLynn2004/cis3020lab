@@ -61,7 +61,7 @@ table {
 }
 
 th {
-  border: 3px solid #3e2c1c;
+  border: 3px solid #3e2c1c; /* dark hog brown */;
   background-color: #556b2f; /* forest green */;
 }
 
@@ -84,7 +84,7 @@ th a:active {
 }
 
 th a:visited {
-  color:  #d9741d; /* golden-orange */;
+  color:  #556b2f; /* forest green */;
 }
 
 /* Responsive Navigation */
