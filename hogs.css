@@ -18,8 +18,9 @@ body {
    Header
    =============================== */
 header {
-  background-color: #d9741d; /* muted version of hunter's orange */ 
-  color: #556b2f; /* muted forest green from grass edges */
+  background-color: #556b2f; /* muted forest green from grass edges */ 
+  color: #d9741d; /* muted version of hunter's orange */
+  border: 3px solid #fff;
   text-align: center;
   padding: 10px;
   font-size: 2em;
@@ -61,7 +62,7 @@ table {
 }
 
 th {
-  border: 3px solid #3e2c1c; /* hog brown */
+  border: 3px solid #fff;
   background-color: #556b2f; /* forest green */;
 }
 
