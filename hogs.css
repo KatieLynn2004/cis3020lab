@@ -69,7 +69,7 @@ th a {
   display: block;
   padding: 12px 0;
   text-align: center;
-  color: #d9741d; /* golden-orange */
+  color:#556b2f; /* forest green */
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
