@@ -69,7 +69,7 @@ th a {
   display: block;
   padding: 12px 0;
   text-align: center;
-  color: #f0d6a2; /* pale gold/tan from light grass/hog fur */
+  color: #d9741d; /* golden-orange */
   text-decoration: none;
   transition: background 0.3s, color 0.3s;
 }
@@ -84,7 +84,7 @@ th a:active {
 }
 
 th a:visited {
-  color: #cccccc;
+  color:  #556b2f; /* forest green */;
 }
 
 /* Responsive Navigation */
