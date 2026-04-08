@@ -20,7 +20,6 @@ body {
 header {
   background-color: #556b2f; /* muted forest green from grass edges */ 
   color: #d9741d; /* muted version of hunter's orange */
-  border: 3px solid #fff;
   text-align: center;
   padding: 10px;
   font-size: 2em;
@@ -62,7 +61,7 @@ table {
 }
 
 th {
-  border: 3px solid #fff;
+  border: 3px solid #3e2c1c;
   background-color: #556b2f; /* forest green */;
 }
 
@@ -77,7 +76,7 @@ th a {
 
 th a:hover {
   background-color: #d9741d; /* golden-orange */
-  color: #fff;
+  color: #556b2f; /* forest green */;
 }
 
 th a:active {
