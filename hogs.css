@@ -103,11 +103,12 @@ main section {
   padding: 20px;
 }
 
-h2.gradient-text {
-  background: linear-gradient(to right, #d9741d, #8b5a2b, #556b2f); /* orange → brown → green from image */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 15px;
+h2 {
+  color:#d9741d
+}
+
+h3 {
+  color:#d9741d
 }
 
 p.animated {
