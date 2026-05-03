@@ -181,6 +181,7 @@ button:hover {
    Image Effects Examples
    =============================== */
 img.rounded {
+  border: 3px solid rgb(49, 29, 5); /* dark hog brown */;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: transform 0.3s;
