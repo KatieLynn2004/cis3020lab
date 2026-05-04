@@ -12,7 +12,9 @@ document.addEventListener("DOMContentLoaded", function () {
       const name = document.getElementById("homeName").value;
       const message = document.getElementById("homeFormMessage");
 
-      message.textContent = `Thanks ${name}! Your comment was received.`;
+      if (message) {
+        message.textContent = `Thanks ${name}! Your comment was received.`;
+      }
 
       homeForm.reset();
     });
@@ -30,14 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
       const name = document.getElementById("communityName").value;
       const message = document.getElementById("communityFormMessage");
 
-      message.textContent = `Thanks ${name}! Your submission was received.`;
+      if (message) {
+        message.textContent = `Thanks ${name}! Your submission was received.`;
+      }
 
       communityForm.reset();
     });
   }
 
   /* =========================
-     CLICK INTERACTION (GALLERY)
+     CLICK INTERACTION
   ========================= */
   const items = document.querySelectorAll(".item");
 

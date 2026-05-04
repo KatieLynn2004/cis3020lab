@@ -54,14 +54,21 @@
             </ul>
 			
             <h4>Leave a Comment</h4>
-            <section id="comments">
 
-            <form>
-                <input type="text" placeholder="Name" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Comment" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+            <section id="comments">
+                <form id="homeCommentForm">
+
+                    <input type="text" id="homeName" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea id="homeMessage" placeholder="Comment" required></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+
+                <p id="homeFormMessage"></p>
+            </section>
+
         </section>
         
     </main>
