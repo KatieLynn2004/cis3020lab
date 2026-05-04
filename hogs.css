@@ -10,17 +10,17 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #e9e2d0; /* soft earthy tan */
-  color: #3e2c1c; /* dark brown */
+  background: #e9e2d0;
+  color: #3e2c1c;
 }
 
 /* ===============================
    HEADER
    =============================== */
 header {
-  background-color: #556b2f; /* forest green */
-  color: #d9741d; /* orange */
-  border: 3px solid rgb(49, 29, 5); /* dark brown */
+  background-color: #556b2f;
+  color: #d9741d;
+  border: 3px solid rgb(49, 29, 5);
   text-align: center;
   padding: 10px;
   font-size: 2em;
@@ -45,7 +45,7 @@ header {
 }
 
 /* ===============================
-   NAVIGATION
+   NAVIGATION (TABLE STYLE)
    =============================== */
 table {
   width: 100%;
@@ -89,7 +89,6 @@ p {
 }
 
 .first-paragraph {
-  color: #3e2c1c;
   margin-bottom: 20px;
 }
 
@@ -101,46 +100,55 @@ ul {
 }
 
 /* ===============================
-   NAV-BAR STYLE FORMS (MATCH TABLE NAV)
+   FORM WRAPPER (MATCH NAV LOOK)
    =============================== */
-
 #comments,
 #submit {
-  display: block;
-  background-color: #556b2f;
-  color: #d9741d;
-  text-align: center;
-  padding: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid rgb(49, 29, 5);
   margin-bottom: 20px;
 }
 
-/* Inputs behave like nav buttons stacked full width */
+/* Make form behave like NAV GRID */
+#comments form,
+#submit form {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* ===============================
+   FORM FIELDS = NAV CELLS
+   =============================== */
 #comments input,
 #comments textarea,
 #submit input,
 #submit textarea {
-  width: 100%;
-  padding: 12px 0;
-
   background-color: #556b2f;
-  border: 3px solid rgb(49, 29, 5);
   color: #d9741d;
-  display: block;
+  border: 3px solid rgb(49, 29, 5);
+
+  padding: 12px;
+  width: 100%;
+  font-family: Arial, sans-serif;
 }
 
-/* Buttons behave like nav cells */
+/* ===============================
+   FORM BUTTON = NAV CELL STYLE
+   =============================== */
 #comments button,
 #submit button {
-  width: 100%;
-  padding: 12px;
-
   background-color: #556b2f;
   color: #d9741d;
   border: 3px solid rgb(49, 29, 5);
+
+  padding: 12px;
+  width: 100%;
   cursor: pointer;
+  font-family: Arial, sans-serif;
 }
 
-/* Hover matches nav hover feel */
+/* Hover matches NAV exactly */
 #comments button:hover,
 #submit button:hover {
   background-color: #e9e2d0;
@@ -157,14 +165,12 @@ footer {
   padding: 15px;
 }
 
-
 /* ===============================
-   SIMPLE FADE ANIMATION
+   FADE ANIMATION (CONTENT ONLY)
    =============================== */
-p {
+main p {
   animation: fadeIn 0.8s ease-in;
 }
-
 
 @keyframes fadeIn {
   from { opacity: 0; }
