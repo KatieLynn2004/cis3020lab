@@ -18,30 +18,6 @@
         <img src="IMG_2388.jpg" alt="Picture of 13 hogs in a line">
     </div>
 
-    <style>
-     .banner {
-            width: 100%;
-            height: 250px;  /* control banner height here */
-            overflow: hidden;
-        }
-        .banner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;  /* fills entire space */
-            object-position: center 50%; /* adjust vertical focus */
-            display: block;
-        }
-     table, th  {
-        width: 100%;
-        table-layout: fixed;
-        border: 3px solid rgb(49, 29, 5); /* dark hog brown */;
-        border-collapse:collapse;         
-      }
-    .first-paragraph {
-        margin-bottom: 20px;
-        }   
-    </style>   
-
     <table>
       <tr>
         <th><a href="index.html">Home</a></th>
@@ -102,9 +78,11 @@
                 <div class="item">
                     <p>"I hadn't seen anything all evening. I was sitting in my stand, bored, always looking through my scope or my binoculars, but seeing nothing. Sometimes my eyes play tricks on me, but this time I thought I saw something, and I was right. There was a huge black boar between 200 and 250 yards out. I waited until he was broadside, made sure I was steady, and took my shot, but he started walking. I saw him drop, but just to be safe, I tried to shoot him again. By then, he was gone, and it was dark. So I called my dad, and we found where he had been standing and the first bit of blood, but decided to come back the next morning. We tracked him for half a mile before we got to the neighbor’s property line, and I had to go back home still wondering." — Katie Lynn Murray</p>
                 </div>
+
                 <div class="item">
                     <p>"I was never the biggest hunter in my family. Honestly, I mostly agreed to go to our hunting camp in Texas because everyone else had different plans for fall break, and I figured it would be nice to spend time with my dad and sister. The WiFi was pretty much nonexistent, and at first, I was completely bored out of my mind. After enough pestering, they finally convinced me to join everyone on a hunt. I didn’t expect much, but on my very first trip out, I spotted a hog moving through the brush. My heart was pounding, but with a little help from my dad, I lined up my shot and actually got it! After that, I had a blast for the rest of the trip. I’m still not as crazy about hunting as the rest of my family, but I’m glad I got to experience something my dad and sister love. And for the record, I still brag about being the only one to bring home bacon that weekend!" — KC Murray</p>
                 </div>
+
                 <div class="item">
                     <p>"I wanted to share an update about an ongoing challenge I've been facing with feral hogs on my property. In the spring of 2025, I woke up to discover that a sounder of feral hogs had visited my yard. Their primary attraction seemed to be the acorns that had accumulated under the many saw tooth oak trees the previous fall. On that particular night, they managed to cause significant damage to the land. Unfortunately, this wasn't an isolated incident. The hogs returned three more times, ultimately destroying nearly two acres of what was once a pristine, manicured lawn. I devoted most of a weekend to discing over the yard in hopes of leveling out the damage, but the affected area remained unmowable until the following spring. From the initial visit through their last, I was able to trap two hogs and shoot a total of three. My daughter and I extended our efforts by setting traps on neighboring properties and regularly checking them for about a year. Together, we managed to catch close to 30 pigs. Despite our persistent efforts, this has not been nearly enough to lessen the problem. While the hogs haven't returned to the lawn itself recently, there are still clear signs that they remain close by. I'm concerned that it's only a matter of time before they come back and the cycle begins again. If you have any advice or resources that might help address this ongoing issue, I would be grateful for your input. Thank you for taking the time to read about this situation." - Mike Murray</p>
                 </div>
@@ -114,6 +92,16 @@
          <section id="submit">
         <h3>Share Your Hunt</h3>
             <p>Want your story, photo, video, or art featured? Email it to: "kmurray299715@nsula.edu" All submissions are credited to the creator.</p>
+            
+            <form id="communityForm">
+                <input type="text" id="communityName" placeholder="Name" required>
+                <input type="email" id="communityEmail" placeholder="Email" required>
+                <textarea id="communityComment" placeholder="Your submission" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="communityFormMessage"></p>
+
         </section>
 
     </main>
@@ -125,6 +113,8 @@
             Last Updated: 05-03-2026
         </p>
     </footer>
+
+    <script src="hogs.js"></script>
 
 </body>
 </html>
