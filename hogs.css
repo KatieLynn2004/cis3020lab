@@ -114,19 +114,13 @@ ul {
   margin-bottom: 20px;
 }
 
-/* FORM behaves like nav cells */
-#comments form,
-#submit form {
-  display: block;
-}
-
 /* Inputs behave like nav buttons stacked full width */
 #comments input,
 #comments textarea,
 #submit input,
 #submit textarea {
   width: 100%;
-  padding: 12px;
+  padding: 12px 0;
 
   background-color: #556b2f;
   border: 3px solid rgb(49, 29, 5);
