@@ -148,30 +148,55 @@ button:hover {
   color: #556b2f;
 }
 
-/* ===============================
-   COMMUNITY ITEMS
-   =============================== */
-
-.featured,
-.grid,
-.stories {
-  display: flex;        /* puts items side by side */
-  gap: 20px;            /* space between items */
-  flex-wrap: nowrap;    /* keeps everything in one row */
-  overflow-x: auto;     /* allows scrolling if needed */
-  padding-bottom: 10px; /* prevents cutoff at bottom */
-}
-
-.item {
-  flex: 0 0 300px;      /* fixed width for each item */
-  background-color: #e9e2d0;
+/* Shared form container style */
+#comments,
+#submit {
+  background-color: #556b2f;
   border: 3px solid rgb(49, 29, 5);
-  padding: 10px;
-  transition: 0.3s;
+  color: #d9741d;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.item p {
-  text-align: center;
+/* Form layout */
+#comments form,
+#submit form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Inputs */
+#comments input,
+#comments textarea,
+#submit input,
+#submit textarea {
+  width: 80%;
+  max-width: 500px;
+
+  background-color: #556b2f;
+  border: 3px solid rgb(49, 29, 5);
+  color: #d9741d;
+  padding: 10px;
+}
+
+/* Buttons */
+#comments button,
+#submit button {
+  background-color: #556b2f;
+  color: #d9741d;
+  border: 3px solid rgb(49, 29, 5);
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+#comments button:hover,
+#submit button:hover {
+  background-color: #d9741d;
+  color: #556b2f;
 }
 
 /* JS INTERACTION EFFECT */
