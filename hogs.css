@@ -79,7 +79,7 @@ main section {
   padding: 20px;
 }
 
-h2, h3, h4, h5 {
+h2, h3, h4, h5, h6 {
   color: #d9741d;
 }
 
@@ -106,7 +106,7 @@ ul {
 form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0px;
   max-width: 500px;
   margin: 20px auto;
   background-color:  #556b2f;
@@ -152,7 +152,6 @@ button {
   transition: 0.3s;
 }
 
-/* Optional: center text inside items */
 .item p {
   text-align: center;
 }
@@ -180,6 +179,7 @@ footer {
 p {
   animation: fadeIn 0.8s ease-in;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
