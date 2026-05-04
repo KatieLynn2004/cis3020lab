@@ -88,11 +88,6 @@ p {
   margin-bottom: 10px;
 }
 
-p footer {
-  background-color: #3e2c1c;
-  color: #d9741d;
-}
-
 .first-paragraph {
   margin-bottom: 20px;
 }
@@ -154,7 +149,7 @@ button {
    FOOTER
    =============================== */
 footer {
-  background-color: #3e2c1c;
+  background-color: #d9741d;
   color: #d9741d;
   text-align: center;
   padding: 15px;
