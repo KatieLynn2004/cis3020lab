@@ -69,7 +69,7 @@ th a {
 
 th a:hover {
   background-color: #e9e2d0;
-  color: #3e2c1c;
+  color: #d9741d;
 }
 
 /* ===============================
@@ -108,7 +108,7 @@ form {
   gap: 12px;
   max-width: 500px;
   margin: 20px auto;
-  background-color: #e9e2d0;
+  background-color:  #d9741d;
   padding: 20px;
   border: 3px solid rgb(49, 29, 5);
 }
