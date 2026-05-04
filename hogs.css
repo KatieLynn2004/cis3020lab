@@ -1,7 +1,7 @@
 /* ===============================
    Global Styles
    =============================== */
-* {
+** {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,49 +10,42 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-   background: #e9e2d0; /* soft earthy tan from background */
-  color: #3e2c1c; /* dark brown like the hogs */ 
+  background: #e9e2d0; /* soft earthy tan */
+  color: #3e2c1c; /* dark brown */
 }
 
 /* ===============================
-   Header
+   HEADER
    =============================== */
 header {
-  background-color: #556b2f; /* muted forest green from grass edges */ 
-  color: #d9741d; /* muted version of hunter's orange */
-  border: 3px solid rgb(49, 29, 5); /* dark hog brown */;
+  background-color: #556b2f; /* forest green */
+  color: #d9741d; /* orange */
+  border: 3px solid rgb(49, 29, 5); /* dark brown */
   text-align: center;
   padding: 10px;
   font-size: 2em;
-  letter-spacing: 1px;
 }
 
 /* ===============================
-   Banner
+   BANNER
    =============================== */
-
 .banner {
   width: 100%;
-  height: 250px;  /* control banner height here */
+  height: 250px;
   overflow: hidden;
+  border: 3px solid rgb(49, 29, 5);
 }
+
 .banner img {
   width: 100%;
   height: 100%;
-  object-fit: cover;  /* fills entire space */
-  object-position: center 50%; /* adjust vertical focus */
+  object-fit: cover;
+  object-position: center 50%;
   display: block;
-  border-radius: 8px;
-  transition: transform 0.3s, filter 0.3s;
-}
-
-.banner img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.1);
 }
 
 /* ===============================
-   Table Navigation
+   NAVIGATION
    =============================== */
 table {
   width: 100%;
@@ -62,92 +55,52 @@ table {
 }
 
 th {
-  border: 3px solid rgb(49, 29, 5); /* dark hog brown */;
-  background-color: #556b2f; /* forest green */;
+  background-color: #556b2f;
+  border: 3px solid rgb(49, 29, 5);
 }
 
 th a {
   display: block;
   padding: 12px 0;
   text-align: center;
-  color:#556b2f; /* forest green */
+  color: #d9741d;
   text-decoration: none;
-  transition: background 0.3s, color 0.3s;
 }
 
 th a:hover {
   background-color: #e9e2d0;
-  color: #d9741d; /* golden-orange */;
-}
-
-th a:active {
-   background-color: #8b5a2b; /* deeper brown */
-}
-
-th a:visited {
-  color: #d9741d; /* golden-orange */;
-}
-
-/* Responsive Navigation */
-@media (max-width: 768px) {
-  table, tr, th {
-    display: block;
-    width: 100%;
-  }
+  color: #3e2c1c;
 }
 
 /* ===============================
-   Main Section
+   MAIN CONTENT
    =============================== */
 main section {
   padding: 20px;
 }
 
-h2 {
-  color:#d9741d
+h2, h3 {
+  color: #d9741d;
 }
 
-h3 {
-  color:#d9741d
+p {
+  color: #3e2c1c;
+  margin-bottom: 10px;
 }
 
-h4 {
-  color:#d9741d
+.first-paragraph {
+  margin-bottom: 20px;
 }
 
-p.animated {
-  animation: fadeIn 2s ease-in;
-}
-
-/* List styling */
 ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 20px;
+  color: #3e2c1c;
 }
 
 /* ===============================
-   Animations
-   =============================== */
-@keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-/* ===============================
-   Footer
-   =============================== */
-footer {
-  background-color: rgb(49, 29, 5); /* dark hog brown */;
-  color: #e9e2d0;    /*#f0d6a2 /* light tan */
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  margin-top: 20px;
-}
-
-/* ===============================
-   Form Styling (for future form)
+   FORMS (HOME + COMMUNITY)
    =============================== */
 form {
   display: flex;
@@ -155,48 +108,61 @@ form {
   gap: 12px;
   max-width: 500px;
   margin: 20px auto;
-  background-color: #e9e2d0; /* soft earthy tan */
+  background-color: #e9e2d0;
   padding: 20px;
-  border-radius: 8px;
-  border: 2px rgb(49, 29, 5); /* dark hog brown */;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  border: 3px solid rgb(49, 29, 5);
 }
 
-input, textarea, button {
+input, textarea {
   padding: 10px;
-  border-radius: 5px;
-  border: 1px rgb(49, 29, 5); /* dark hog brown */;
-  font-size: 1em;
+  border: 2px solid rgb(49, 29, 5);
+  background-color: #e9e2d0;
+  color: #3e2c1c;
 }
 
 button {
-  background-color: #556b2f; /* forest green */
+  padding: 10px;
+  background-color: #556b2f;
   color: #d9741d;
-  border: 1px rgb(49, 29, 5); /* dark hog brown */;
+  border: 3px solid rgb(49, 29, 5);
   cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #556b2f; /* forest green */
-  color: #d9741d;           
 }
 
 /* ===============================
-   Image Effects Examples
+   COMMUNITY ITEMS
    =============================== */
-img.rounded {
-  border: 3px solid rgb(49, 29, 5); /* dark hog brown */;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
+.item {
+  width: 300px;
+  background-color: #e9e2d0;
+  border: 3px solid rgb(49, 29, 5);
+  padding: 10px;
+  transition: 0.3s;
 }
 
-img.rounded:hover {
-  transform: scale(1.05);
+/* JS INTERACTION EFFECT */
+.item.active {
+  transform: scale(1.03);
+  border-color: #d9741d;
 }
 
-img.rotate:hover {
-  transform: rotate(5deg);
-  transition: transform 0.3s;
+/* ===============================
+   FOOTER
+   =============================== */
+footer {
+  background-color: rgb(49, 29, 5);
+  color: #e9e2d0;
+  text-align: center;
+  padding: 15px;
+}
+
+/* ===============================
+   SIMPLE FADE ANIMATION
+   =============================== */
+p {
+  animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
