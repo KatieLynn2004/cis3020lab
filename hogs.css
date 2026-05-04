@@ -133,18 +133,28 @@ button {
 /* ===============================
    COMMUNITY ITEMS
    =============================== */
-.container {
-  display: flex;
-  gap: 20px;
+
+.featured,
+.grid,
+.stories {
+  display: flex;        /* puts items side by side */
+  gap: 20px;            /* space between items */
+  flex-wrap: nowrap;    /* keeps everything in one row */
+  overflow-x: auto;     /* allows scrolling if needed */
+  padding-bottom: 10px; /* prevents cutoff at bottom */
 }
 
 .item {
-  flex: 1;
-  width: 400px;
+  flex: 0 0 300px;      /* fixed width for each item */
   background-color: #e9e2d0;
   border: 3px solid rgb(49, 29, 5);
   padding: 10px;
   transition: 0.3s;
+}
+
+/* Optional: center text inside items */
+.item p {
+  text-align: center;
 }
 
 /* JS INTERACTION EFFECT */
