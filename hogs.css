@@ -131,7 +131,13 @@ button {
 /* ===============================
    COMMUNITY ITEMS
    =============================== */
+.container {
+  display: flx;
+  gap: 20px;
+}
+
 .item {
+  flex: 1;
   width: 400px;
   background-color: #e9e2d0;
   border: 3px solid rgb(49, 29, 5);
@@ -149,10 +155,15 @@ button {
    FOOTER
    =============================== */
 footer {
-  background-color: #d9741d;
+  background-color: #556b2f;
   color: #d9741d;
   text-align: center;
   padding: 15px;
+}
+
+p {
+  color: #d9741d;
+  margin-bottom: 10px;
 }
 
 /* ===============================
