@@ -79,7 +79,7 @@ main section {
   padding: 20px;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   color: #d9741d;
 }
 
@@ -89,6 +89,7 @@ p {
 }
 
 .first-paragraph {
+  color: #3e2c1c;
   margin-bottom: 20px;
 }
 
@@ -132,7 +133,7 @@ button {
    COMMUNITY ITEMS
    =============================== */
 .container {
-  display: flx;
+  display: flex;
   gap: 20px;
 }
 
@@ -161,10 +162,6 @@ footer {
   padding: 15px;
 }
 
-p {
-  color: #d9741d;
-  margin-bottom: 10px;
-}
 
 /* ===============================
    SIMPLE FADE ANIMATION
