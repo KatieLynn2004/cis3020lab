@@ -1,19 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   /* =========================
-     HOME PAGE FORM
+     HOME FORM
   ========================= */
-
   const homeForm = document.getElementById("homeCommentForm");
-  const homeMessage = document.getElementById("homeFormMessage");
 
   if (homeForm) {
     homeForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
       const name = document.getElementById("homeName").value;
+      const message = document.getElementById("homeFormMessage");
 
-      homeMessage.textContent = "Thanks " + name + "! Your comment was received.";
+      message.textContent = `Thanks ${name}! Your comment was received.`;
+
       homeForm.reset();
     });
   }
@@ -21,19 +21,30 @@ document.addEventListener("DOMContentLoaded", function () {
   /* =========================
      COMMUNITY FORM
   ========================= */
-
   const communityForm = document.getElementById("communityForm");
-  const communityMessage = document.getElementById("communityMessage");
 
   if (communityForm) {
     communityForm.addEventListener("submit", function (e) {
       e.preventDefault();
 
       const name = document.getElementById("communityName").value;
+      const message = document.getElementById("communityFormMessage");
 
-      communityMessage.textContent = "Thanks " + name + "! Your submission was received.";
+      message.textContent = `Thanks ${name}! Your submission was received.`;
+
       communityForm.reset();
     });
   }
+
+  /* =========================
+     CLICK INTERACTION (GALLERY)
+  ========================= */
+  const items = document.querySelectorAll(".item");
+
+  items.forEach(item => {
+    item.addEventListener("click", function () {
+      this.classList.toggle("active");
+    });
+  });
 
 });
