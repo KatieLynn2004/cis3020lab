@@ -116,8 +116,8 @@ form {
 input, textarea {
   padding: 10px;
   border: 2px solid rgb(49, 29, 5);
-  background-color: #e9e2d0;
-  color: #3e2c1c;
+  background-color: #556b2f;
+  color: #d9741d;
 }
 
 button {
@@ -132,7 +132,7 @@ button {
    COMMUNITY ITEMS
    =============================== */
 .item {
-  width: 300px;
+  width: 400px;
   background-color: #e9e2d0;
   border: 3px solid rgb(49, 29, 5);
   padding: 10px;
