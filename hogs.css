@@ -100,41 +100,29 @@ ul {
 }
 
 /* ===============================
-   FORM WRAPPER (MATCH NAV LOOK)
+   FORM = STACKED NAVBAR STYLE
    =============================== */
+
+/* Wrapper behaves like full-width nav */
 #comments,
 #submit {
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 20px;
 }
 
-/* Make form behave like NAV GRID */
+/* Stack items like rows */
 #comments form,
 #submit form {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-/* ===============================
-   FORM FIELDS = NAV CELLS
-   =============================== */
+/* Each field = nav cell */
 #comments input,
 #comments textarea,
 #submit input,
-#submit textarea {
-  background-color: #556b2f;
-  color: #d9741d;
-  border: 3px solid rgb(49, 29, 5);
-
-  padding: 12px;
-  width: 100%;
-  font-family: Arial, sans-serif;
-}
-
-/* ===============================
-   FORM BUTTON = NAV CELL STYLE
-   =============================== */
+#submit textarea,
 #comments button,
 #submit button {
   background-color: #556b2f;
@@ -143,15 +131,49 @@ ul {
 
   padding: 12px;
   width: 100%;
-  cursor: pointer;
+
   font-family: Arial, sans-serif;
+  text-align: center;
+
+  /* Makes them feel like nav buttons */
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Hover matches NAV exactly */
+/* Remove gaps so borders touch like table cells */
+#comments input,
+#comments textarea,
+#submit input,
+#submit textarea {
+  border-bottom: none;
+}
+
+/* Last element keeps bottom border */
+#comments textarea,
+#submit textarea {
+  border-bottom: 3px solid rgb(49, 29, 5);
+}
+
+/* Button sits clean at bottom */
+#comments button,
+#submit button {
+  border-top: none;
+}
+
+/* Hover = EXACT nav behavior */
 #comments button:hover,
 #submit button:hover {
   background-color: #e9e2d0;
   color: #d9741d;
+}
+
+/* Optional: focus effect (feels interactive like nav hover) */
+#comments input:focus,
+#comments textarea:focus,
+#submit input:focus,
+#submit textarea:focus {
+  background-color: #e9e2d0;
+  color: #3e2c1c;
+  outline: none;
 }
 
 /* ===============================
