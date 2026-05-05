@@ -75,11 +75,16 @@ th a:hover {
 /* ===============================
    MAIN CONTENT
    =============================== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 main section {
   padding: 20px;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4 {
   color: #d9741d;
 }
 
@@ -100,6 +105,40 @@ ul {
 }
 
 /* ===============================
+   CONTENT BLOCKS (UNIFORM)
+   =============================== */
+.featured,
+.grid,
+.stories {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+}
+
+.item {
+  border: 3px solid rgb(49, 29, 5);
+  margin-bottom: 15px;
+  background-color: #e9e2d0;
+  transition: background-color 0.2s ease;
+}
+
+.item:hover {
+  background-color: #556b2f;
+  color: #d9741d;
+}
+
+.item img,
+.item video {
+  width: 100%;
+  display: block;
+  border-bottom: 3px solid rgb(49, 29, 5);
+}
+
+.item p {
+  padding: 10px;
+  margin: 0;
+}
+
+/* ===============================
    FORM = STACKED NAVBAR STYLE
    =============================== */
 
@@ -116,6 +155,8 @@ ul {
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* Each field = nav cell */
@@ -129,7 +170,7 @@ ul {
   color: #d9741d;
   border: 3px solid rgb(49, 29, 5);
 
-  padding: 12px;
+  padding: 10px;
   width: 100%;
 
   font-family: Arial, sans-serif;
@@ -160,7 +201,11 @@ ul {
 }
 
 /* Hover = EXACT nav behavior */
+#comments input,
+#comments textarea,
 #comments button:hover,
+#submit input,
+#submit textarea,
 #submit button:hover {
   background-color: #e9e2d0;
   color: #d9741d;
@@ -172,7 +217,7 @@ ul {
 #submit input:focus,
 #submit textarea:focus {
   background-color: #e9e2d0;
-  color: #3e2c1c;
+  color: #d9741d;
   outline: none;
 }
 
