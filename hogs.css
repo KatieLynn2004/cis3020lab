@@ -131,6 +131,44 @@ ul {
 }
 
 /* ===============================
+   LEARN PAGE CARDS (FINAL STYLE)
+   =============================== */
+
+.learn-card {
+  border: 3px solid #556b2f;
+  background-color: #e9e2d0;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover turns orange */
+.learn-card:hover {
+  background-color: #d9741d;
+  color: #3e2c1c;
+  cursor: pointer;
+}
+
+/* Center headings */
+.learn-card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Center images + style */
+.learn-card img {
+  display: block;
+  margin: 10px auto;
+  border: 3px solid #556b2f;
+  border-radius: 6px;
+}
+
+/* Clean spacing */
+.learn-card ul {
+  margin-top: 10px;
+}
+
+/* ===============================
    FEATURED + COMMUNITY (3 PER ROW)
    =============================== */
 .featured,
