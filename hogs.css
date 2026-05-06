@@ -131,41 +131,54 @@ ul {
 }
 
 /* ===============================
-   LEARN PAGE CARDS (FINAL STYLE)
+   LEARN PAGE SIDE-BY-SIDE CARDS
    =============================== */
 
-.learn-card {
+.learn-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
   border: 3px solid #556b2f;
   background-color: #e9e2d0;
+
   padding: 15px;
   margin-bottom: 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover turns orange */
-.learn-card:hover {
-  background-color: #d9741d;
-  color: #3e2c1c;
-  cursor: pointer;
-}
+/* Image on left */
+.learn-row img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
 
-/* Center headings */
-.learn-card h3 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Center images + style */
-.learn-card img {
-  display: block;
-  margin: 10px auto;
   border: 3px solid #556b2f;
   border-radius: 6px;
 }
 
-/* Clean spacing */
-.learn-card ul {
-  margin-top: 10px;
+/* Text on right */
+.learn-text {
+  flex: 1;
+}
+
+/* Keep headings centered like your style */
+.learn-text h3 {
+  color: #d9741d;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Mobile fix */
+@media (max-width: 800px) {
+  .learn-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .learn-row img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* ===============================
@@ -365,7 +378,7 @@ footer {
 /* ===============================
    FADE ANIMATION (CONTENT ONLY)
    =============================== */
-main p {
+main > section > p {
   animation: fadeIn 0.8s ease-in;
 }
 
