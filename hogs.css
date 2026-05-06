@@ -18,7 +18,7 @@ body {
    HEADER
    =============================== */
 header {
-  background-color: #556b2f;
+  background-color: #3e2c1c;
   color: #d9741d;
   border: 3px solid rgb(49, 29, 5);
   text-align: center;
@@ -257,11 +257,11 @@ ul {
    FOOTER
    =============================== */
 footer {
-  background-color: #556b2f;
+  background-color: #3e2c1c;
   color: #d9741d;
   text-align: center;
   padding: 15px;
-  border: 3px solid rgb(49, 29, 5);
+  border: 3px solid rgb(217, 116, 29);
 }
 
 /* ===============================
