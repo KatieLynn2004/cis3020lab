@@ -123,7 +123,7 @@ ul {
 
 /* Gallery item styling */
 .item {
-  border: 3px solid rgb(49, 29, 5);
+  border: 3px solid rgb(85, 107, 47);
   background-color: #e9e2d0;
   transition: 0.2s;
   display: flex;
@@ -137,7 +137,7 @@ ul {
   height: 180px;
   object-fit: cover;
   display: block;
-  border-bottom: 3px solid rgb(49, 29, 5);
+  border-bottom: 3px solid rgb(85, 107, 47);
 }
 
 .item p {
@@ -261,6 +261,7 @@ footer {
   color: #d9741d;
   text-align: center;
   padding: 15px;
+  border: 3px solid rgb(49, 29, 5);
 }
 
 /* ===============================
