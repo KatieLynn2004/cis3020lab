@@ -155,56 +155,41 @@ ul {
    =============================== */
 
 
-.learn-row {
+.learn-box {
   display: flex;
   align-items: center;
   gap: 20px;
 
-
   border: 3px solid #556b2f;
   background-color: #e9e2d0;
-
 
   padding: 15px;
   margin-bottom: 20px;
 }
 
-
-/* Image on left */
-.learn-row img {
+/* Image side */
+.learn-img img {
   width: 300px;
   height: 250px;
   object-fit: cover;
-
 
   border: 3px solid #556b2f;
   border-radius: 6px;
 }
 
-
-/* Text on right */
-.learn-text {
+/* Text side */
+.learn-content {
   flex: 1;
 }
 
-
-/* Keep headings centered like your style */
-.learn-text h3 {
-  color: #d9741d;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-
 /* Mobile fix */
 @media (max-width: 800px) {
-  .learn-row {
+  .learn-box {
     flex-direction: column;
     text-align: center;
   }
 
-
-  .learn-row img {
+  .learn-img img {
     width: 100%;
     height: auto;
   }
