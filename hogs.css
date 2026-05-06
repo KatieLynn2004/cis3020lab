@@ -86,6 +86,7 @@ main section {
 
 h2, h3, h4 {
   color: #d9741d;
+  text-align: center;
 }
 
 p {
@@ -101,23 +102,27 @@ ul {
   list-style-type: disc;
   padding-left: 20px;
   margin-bottom: 20px;
-  color: #3e2c1c;
 }
 
 /* ===============================
-   CONTENT BLOCKS (UNIFORM)
+   FEATURED + COMMUNITY (3 PER ROW)
    =============================== */
 .featured,
 .grid {
   display: flex;
   justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
-/* Gallery items */
+.featured .item,
+.grid .item {
+  width: calc(33.333% - 20px);
+  max-width: 280px;
+}
+
+/* Gallery item styling */
 .item {
-  width: 280px;
   border: 3px solid rgb(49, 29, 5);
   background-color: #e9e2d0;
   transition: 0.2s;
@@ -125,52 +130,59 @@ ul {
   flex-direction: column;
 }
 
-.item:hover {
-  background-color: #556b2f;
-  color: #d9741d;
-}
-
+/* Media inside cards */
 .item img,
 .item video {
   width: 100%;
-  height: 180px; /* forces equal size */
-  object-fit: cover; /* prevents stretching */
+  height: 180px;
+  object-fit: cover;
   display: block;
   border-bottom: 3px solid rgb(49, 29, 5);
 }
 
 .item p {
   padding: 10px;
-  margin: 0;
+  text-align: center;
+}
+
+/* Hover for gallery */
+.item:hover {
+  background-color: #556b2f;
+  color: #d9741d;
+}
+
+
+/* ===============================
+   HUNTER STORIES (VERTICAL STACK)
+   =============================== */
+.stories {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.stories .item {
+  width: 100%;
+  max-width: 900px;
 }
 
 /* ===============================
-   FORM = STACKED NAVBAR STYLE
+   FORM (NAVBAR STYLE)
    =============================== */
-
-/* Wrapper behaves like full-width nav */
-#comments,
-#submit {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-/* Stack items like rows */
 #comments form,
 #submit form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   max-width: 900px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
-/* Each field = nav cell */
+/* Form fields */
 #comments input,
 #comments textarea,
+#comments button,
 #submit input,
 #submit textarea,
-#comments button,
 #submit button {
   background-color: #556b2f;
   color: #d9741d;
@@ -178,15 +190,12 @@ ul {
 
   padding: 10px;
   width: 100%;
-
-  font-family: Arial, sans-serif;
   text-align: center;
 
-  /* Makes them feel like nav buttons */
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Remove gaps so borders touch like table cells */
+/* Stack effect like navbar */
 #comments input,
 #comments textarea,
 #submit input,
@@ -194,38 +203,40 @@ ul {
   border-bottom: none;
 }
 
-/* Last element keeps bottom border */
 #comments textarea,
 #submit textarea {
   border-bottom: 3px solid rgb(49, 29, 5);
 }
 
-/* Button sits clean at bottom */
 #comments button,
 #submit button {
   border-top: none;
 }
 
-/* Hover = EXACT nav behavior */
-#comments input,
-#comments textarea,
+/* ===============================
+   UNIFIED HOVER (FIXED)
+   =============================== */
+#comments input:hover,
+#comments textarea:hover,
 #comments button:hover,
-#submit input,
-#submit textarea,
+#submit input:hover,
+#submit textarea:hover,
 #submit button:hover {
   background-color: #e9e2d0;
   color: #d9741d;
+  cursor: pointer;
 }
 
-/* Optional: focus effect (feels interactive like nav hover) */
+/* Focus effect */
 #comments input:focus,
 #comments textarea:focus,
 #submit input:focus,
 #submit textarea:focus {
   background-color: #e9e2d0;
-  color: #d9741d;
+  color: #3e2c1c;
   outline: none;
 }
+
 
 /* ===============================
    FOOTER
@@ -247,4 +258,15 @@ main p {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* ===============================
+   MOBILE RESPONSIVE
+   =============================== */
+@media (max-width: 800px) {
+  .featured .item,
+  .grid .item {
+    width: 100%;
+    max-width: 100%;
+  }
 }
