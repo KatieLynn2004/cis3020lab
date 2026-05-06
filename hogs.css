@@ -278,6 +278,40 @@ ul {
   outline: none;
 }
 
+/* ===============================
+   FAQ / Q&A SECTION (NEW STYLE)
+   =============================== */
+
+.faq-item {
+  margin-bottom: 25px;
+}
+
+/* Question (outside box) */
+.faq-item h3 {
+  text-align: center;
+  color: #d9741d;
+  margin-bottom: 8px;
+}
+
+/* Answer box */
+.faq-box {
+  border: 3px solid #556b2f; /* green border */
+  background-color: #e9e2d0;
+  padding: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect (turn orange) */
+.faq-box:hover {
+  background-color: #d9741d;
+  color: #3e2c1c;
+  cursor: pointer;
+}
+
+/* Optional polish */
+.faq-box p {
+  margin: 0;
+}
 
 /* ===============================
    FOOTER
