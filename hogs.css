@@ -147,8 +147,8 @@ ul {
 
 /* Hover for gallery */
 .item:hover {
-  background-color: #556b2f;
-  color: #d9741d;
+  background-color: #d9741d;
+  color: #3e2c1c;
 }
 
 
@@ -193,6 +193,21 @@ ul {
   text-align: center;
 
   transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#comments input,
+#comments textarea,
+#submit input,
+#submit textarea {
+  color: #d9741d;
+}
+
+#comments input::placeholder,
+#comments textarea::placeholder,
+#submit input::placeholder,
+#submit textarea::placeholder {
+  color: #d9741d;
+  opacity: 0.9;
 }
 
 /* Stack effect like navbar */
